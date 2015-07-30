@@ -14,7 +14,7 @@ $ cd docker-grafana2-graphite
 -- do some changes --
 $ docker build -t test/grafana2
 ```
-### Using the Docker Index ### 
+### Using the Docker Index ###
 
 This image is published under our repository on the [Docker Index](https://registry.hub.docker.com/u/sgolota/docker-grafana2-graphite/). 
 
@@ -41,10 +41,9 @@ We use Data volumes to store the data on the host :
 
 Here is an example that stores the data at /srv/graphite/ .
 
-### Configuring Grafana ### 
+### Configuring Grafana ###
 
 Once your container is running all you need to do is open your browser pointing to the host/port you just published.
 user: admin
 pass: admin (You can chanche passwor in web interface)
-Then you must add the data source to Grafana http://docs.grafana.org/datasources/graphite/
-
+Then you must add the data source to Grafana http://docs.grafana.org/datasources/graphite/ .
