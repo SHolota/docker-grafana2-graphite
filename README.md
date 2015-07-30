@@ -33,7 +33,7 @@ The container exposes the following ports:
 - `3000`: the Grafana web interface.
 - `2003`: the Graphite port.
 
-To stores the data on the host we use Data volumes:
+We use Data volumes to store the data on the host :
 
 - `-v /srv/graphite/conf:/opt/graphite/conf`: store graphite config file
 - `-v /srv/graphite/storage:/opt/graphite/storage`: store graphite metric  
@@ -46,6 +46,5 @@ Here is an example that stores the data at /srv/graphite/ .
 Once your container is running all you need to do is open your browser pointing to the host/port you just published.
 user: admin
 pass: admin (You can chanche passwor in web interface)
-Then when starting your Grafana container, you must Adding the data source to Grafana (http://docs.grafana.org/datasources/graphite/)
-
+Then you must add the data source to Grafana http://docs.grafana.org/datasources/graphite/
 
