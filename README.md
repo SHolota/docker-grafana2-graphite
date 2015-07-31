@@ -5,7 +5,7 @@ This image contains a sensible default configuration of Graphite, Carbon-cache a
 
 ### Building the image ###
 
-The Dockerfile and supporting configuration files are available in our Github repository . This comes specially handy if you want to change any of the Graphite or Grafana settings, or simply if you want to know how the image was built.
+The Dockerfile and supporting configuration files are available in our [Github repository](https://github.com/SHolota/docker-grafana2-graphite) . This comes specially handy if you want to change any of the Graphite or Grafana settings, or simply if you want to know how the image was built.
 
 To build the container image from the repository you just need to run the following command:
 ```bash
@@ -17,6 +17,8 @@ $ docker build -t test/grafana2
 ### Using the Docker Index ###
 
 This image is published under our repository on the [Docker Index](https://registry.hub.docker.com/u/sgolota/docker-grafana2-graphite/). 
+
+Before start a container copy graphite config files from [Github repository](https://github.com/SHolota/docker-grafana2-graphite/tree/master/config) in your host folder (in my example /srv/graphite/conf).
 
 To start a container with this image you just need to run the following command:
 ```bash
